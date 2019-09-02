@@ -15,7 +15,7 @@ See how to set up anaconda enviroment on your PC here: https://docs.anaconda.com
 https://www.facebook.com/ads/library/api/
 
   
-4.In ad_scraper.py go through four key changes:
+4. In ad_scraper.py go through four key changes:
 - A. Change 'countries = []' to include an ISO country code: https://www.nationsonline.org/oneworld/country_code_list.html
 - B. Change (args["access_token"] = 'insert') to insert Ad Library Access Token, available here:  https://developers.facebook.com/tools/explorer/
 - C. Change Ad Library (args["search_terms"] = 'insert') to insert a search term or else do full search with '*'
