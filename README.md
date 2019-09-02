@@ -17,7 +17,7 @@ https://www.facebook.com/ads/library/api/
   
 4.In ad_scraper.py go through four key changes:
 - # 1. Change 'countries = []' to include an ISO country code: https://www.nationsonline.org/oneworld/country_code_list.html
-- # 2. Changet (args["access_token"] = 'insert') to insert Ad Library Access Token, available here:  https://developers.facebook.com/tools/explorer/
+- # 2. Change (args["access_token"] = 'insert') to insert Ad Library Access Token, available here:  https://developers.facebook.com/tools/explorer/
 - # 3. Change Ad Library (args["search_terms"] = 'insert') to insert a search term or else do full search with '*'
 - # 4. Change the final line to the folder on your computer where you want the scraped csv to appear.
 
