@@ -29,7 +29,8 @@ https://www.facebook.com/ads/library/api/
     B. If persists, find out where facebook package is located with: pip show facebook-sdk
     C. Add the below code to the 'import' this file location into the 'import' section of the fbconn.py file
     ie.
-      "import sys
       
+      
+      import sys
       sys.path.insert(1, 'C:/Users/"insert PC user"/Anaconda3/envs/"insert your anaconda environment"/Lib/site-packages')
       import facebook"
