@@ -26,7 +26,8 @@ https://www.facebook.com/ads/library/api/
 
  If you receive the error "fbconn.py is not found" when you run the file 
     A. In file ensure fbconn.py is in same folder as ad_scraper.py
-    B. Add the below code to the 'import' section of the fbconn.py file:
+    B. If persists, find out where facebook package is located with: pip show facebook-sdk
+    B. Add the below code to the 'import' this location into the 'import' section of the fbconn.py file:
       "import sys
       sys.path.insert(1, 'C:/Users/"insert PC user"/Anaconda3/envs/"insert your anaconda environment"/Lib/site-packages')
       import facebook"
