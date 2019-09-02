@@ -30,5 +30,6 @@ https://www.facebook.com/ads/library/api/
     C. Add the below code to the 'import' this file location into the 'import' section of the fbconn.py file
     ie.
       "import sys
+      
       sys.path.insert(1, 'C:/Users/"insert PC user"/Anaconda3/envs/"insert your anaconda environment"/Lib/site-packages')
       import facebook"
