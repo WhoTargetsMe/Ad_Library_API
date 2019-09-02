@@ -16,10 +16,10 @@ https://www.facebook.com/ads/library/api/
 
   
 4.In ad_scraper.py go through four key changes:
-- # 1. Change 'countries = []' to include an ISO country code: https://www.nationsonline.org/oneworld/country_code_list.html
-- # 2. Change (args["access_token"] = 'insert') to insert Ad Library Access Token, available here:  https://developers.facebook.com/tools/explorer/
-- # 3. Change Ad Library (args["search_terms"] = 'insert') to insert a search term or else do full search with '*'
-- # 4. Change the final line to the folder on your computer where you want the scraped csv to appear.
+- A. Change 'countries = []' to include an ISO country code: https://www.nationsonline.org/oneworld/country_code_list.html
+- B. Change (args["access_token"] = 'insert') to insert Ad Library Access Token, available here:  https://developers.facebook.com/tools/explorer/
+- C. Change Ad Library (args["search_terms"] = 'insert') to insert a search term or else do full search with '*'
+- D. Change the final line to the folder on your computer where you want the scraped csv to appear.
 
 5. In your terminal command line, locate the ad_library_api folder and run the ad_scaper.py file
 - "python3 ad_scraper.py"
@@ -27,7 +27,8 @@ https://www.facebook.com/ads/library/api/
  If you receive the error "fbconn.py is not found" when you run the file 
     A. In file ensure fbconn.py is in same folder as ad_scraper.py
     B. If persists, find out where facebook package is located with: pip show facebook-sdk
-    B. Add the below code to the 'import' this location into the 'import' section of the fbconn.py file:
+    C. Add the below code to the 'import' this file location into the 'import' section of the fbconn.py file
+    ie.
       "import sys
       sys.path.insert(1, 'C:/Users/"insert PC user"/Anaconda3/envs/"insert your anaconda environment"/Lib/site-packages')
       import facebook"
