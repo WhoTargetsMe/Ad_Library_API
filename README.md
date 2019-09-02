@@ -5,15 +5,20 @@ Who Targets Me have open-sourced this scraping package to make it easier for res
 
 See basic steps here or email contact@whotargets.me for any additional guidance:
 
-Download Zip
+1. Download ad_library_api Zip
 
-Download Python3/Anaconda distribution
+2. Download Python/Anaconda distribution (version 3.7)
 https://www.anaconda.com/distribution/
+See how to set up anaconda enviroment on your PC here: https://docs.anaconda.com/anaconda/user-guide/getting-started/
 
-Get Facebook Ad Library access token permissions (need to send I.d. and wait 24 hours for approval)
+3. Get Facebook Ad Library access token permissions (need to send I.d. and wait 24 hours for approval)
 https://www.facebook.com/ads/library/api/
 
-In file ensure fbconn.py is in same file as ad_scraper.py
+4. In file ensure fbconn.py is in same folder as ad_scraper.py
+If you receive the error "fbconn.py is not found" simpy add the below code to the 'import' section of the fbconn.py file:
+"import sys
+sys.path.insert(1, 'C:/Users/"user name"/Anaconda3/envs/"your anaconda environment"/Lib/site-packages')
+import facebook
 
 In ad_scraper.py go through four key changes:
 - # 1. Change 'countries = []' to include an ISO country code: https://www.nationsonline.org/oneworld/country_code_list.html
