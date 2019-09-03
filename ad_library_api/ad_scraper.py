@@ -79,4 +79,4 @@ for country in countries:
 	df.rename(columns={'lower_bound': 'lower_bound_impressions', 'upper_bound': 'upper_bound_impressions'}, inplace=True)
 
 
-	df.to_csv('/Users/rachel/desktop/BBC/brexitparty.csv'.format(country), encoding='utf8')
+	df.to_csv('/User/path_to_file.csv'.format(country), encoding='utf8')
