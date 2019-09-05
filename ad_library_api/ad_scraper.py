@@ -57,7 +57,7 @@ for country in countries:
 	i=0
 	next_page = r.get('paging', {}).get('next')
 	print(next_page)
-	while next_page!=None:
+	for i in range(100):
 
 
 	    try:
