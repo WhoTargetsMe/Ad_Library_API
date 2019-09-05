@@ -1,4 +1,6 @@
 # Facebook_Ad_Library_API
+
+### Scraping
 Python code package to scrape the Facebook Ad Library data
 
 Who Targets Me have open-sourced this scraping package to make it easier for researchers to scrape the Facebook Ad Library, even if you have a limited knowledge of python.
@@ -20,6 +22,20 @@ https://www.facebook.com/ads/library/api/
 - B. Change (args["access_token"] = 'insert') to insert Ad Library Access Token, available here:  https://developers.facebook.com/tools/explorer/
 - C. Change Ad Library (args["search_terms"] = 'insert') to insert a search term or else do full search with '*'
 - D. Change the final line to the folder on your computer where you want the scraped csv to appear.
+- E. If you would like to change the range of the scrape, you can change the number of 'pages' the code scrapes here:
+
+    i=0
+      next_page = r.get('paging', {}).get('next')
+      print(next_page)
+      for i in range(100):
+
+  Or else to scrape every possible page since the ad library began (particularly if you just want to search a term) use this code instead:
+  
+  i=0
+    next_page = r.get('paging', {}).get('next')
+    print(next_page)
+    for i in range(100):
+
 
 5. In your terminal command line, locate the ad_library_api folder and run the ad_scaper.py file
 - "python3 ad_scraper.py"
@@ -34,3 +50,9 @@ https://www.facebook.com/ads/library/api/
       import sys
       sys.path.insert(1, 'C:/Users/"insert PC user"/Anaconda3/envs/"insert your anaconda environment"/Lib/site-packages')
       import facebook"
+
+### Parsing
+
+Jupyter code package to clean the API csv
+
+
