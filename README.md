@@ -24,17 +24,17 @@ https://www.facebook.com/ads/library/api/
 - D. Change the final line to the folder on your computer where you want the scraped csv to appear.
 - E. If you would like to change the range of the scrape, you can change the number of 'pages' the code scrapes here:
 
-    i=0
-      next_page = r.get('paging', {}).get('next')
-      print(next_page)
-      for i in range(100):
+     `i=0
+        next_page = r.get('paging', {}).get('next')
+        print(next_page)
+        for i in range(100):`
 
   Or else to scrape every possible page since the ad library began (particularly if you just want to search a term) use this code instead:
   
-  i=0
-    next_page = r.get('paging', {}).get('next')
-    print(next_page)
-    for i in range(100):
+   `i=0
+      next_page = r.get('paging', {}).get('next')
+      print(next_page)
+      for i in range(100):`
 
 
 5. In your terminal command line, locate the ad_library_api folder and run the ad_scaper.py file
