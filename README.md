@@ -53,6 +53,17 @@ https://www.facebook.com/ads/library/api/
 
 ### Parsing
 
-Jupyter code package to clean the API csv
+Jupyter code package to clean the API csv (needed to lay out the demographic string into multiple columns based on gender and age breakdown)
+
+In the terminal command line open Jupyter
+
+'jupyter notebook'
+
+Select WTM_Data_Gender_basic.ipynb and adapting the code
+-  In[2]: Change the location/name of the source file
+- In [8]: Change the date range you wish to parse
+- In [23]: Change the name of the final file.
+
+Run each line and final file will save to your desktop.
 
 
