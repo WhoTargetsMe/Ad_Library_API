@@ -1,6 +1,9 @@
 # Facebook_Ad_Library_API
 
 ### Scraping
+
+Created by Roland Adorjani @RolandAdorjani
+
 Python code package to scrape the Facebook Ad Library data
 
 Who Targets Me have open-sourced this scraping package to make it easier for researchers to scrape the Facebook Ad Library, even if you have a limited knowledge of python.
@@ -53,6 +56,9 @@ https://www.facebook.com/ads/library/api/
 
 ### Parsing
 
+Created by Felix Szabo @fgszabo
+
+
 Jupyter code package to clean the API csv (needed to lay out the demographic string into multiple columns based on gender and age breakdown)
 
 In the terminal command line open Jupyter
@@ -61,8 +67,8 @@ In the terminal command line open Jupyter
 
 Select WTM_Data_Gender_basic.ipynb and adapting the code
 -  In[2]: Change the location/name of the source file
-- In [8]: Change the date range you wish to parse
-- In [23]: Change the name of the final file.
+- In [4]: Change the date range you wish to parse
+- In [15]: Change the name of the final file.
 
 Run each line and final file will save to your desktop.
 
